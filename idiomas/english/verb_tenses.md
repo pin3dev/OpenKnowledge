@@ -12,9 +12,9 @@
 | Tempo Verbal | Estrutura | Principais Usos |
 |--|--|--|
 | <h3>_Simple Past_</h3> | 1. $${\color{green}(was/were)}$$ </br> 2. $${\color{green}verb\ past\ simple}$$ | 📅⏪✅ Específico </br> Ações concluídas no passado |
-| <h3>_Past Continuous_</h3> | $${\color{yellow}(am/is/are)}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 👀⏳⏪ Corrente </br> Ação em progresso no passado |
-| <h3>_Past Perfect_</h3> | $${\color{yellow}(have/has)}$$ + $${\color{green}past\ participle}$$ | ⏳✅📜 Concorrência </br> Ação anterior a outra ação passada |
-| <h3>_Past Perfect Continuous_</h3> | $${\color{yellow}(have/has\ been)}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 🔄⏪💪 Interrompida </br> Ação contínua antes de outra no passado |
+| <h3>_Past Continuous_</h3> | $${\color{yellow}(was/were)}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 👀⏳⏪ Corrente </br> Ação em progresso no passado |
+| <h3>_Past Perfect_</h3> | $${\color{yellow}had}$$ + $${\color{green}past\ participle}$$ | ⏳✅📜 Concorrência </br> Ação anterior a outra ação passada |
+| <h3>_Past Perfect Continuous_</h3> | $${\color{yellow}had\ been}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 🔄⏪💪 Interrompida </br> Ação contínua antes de outra no passado |
 
 # Futuro
 
@@ -25,3 +25,8 @@
 | <h3>_Future Continuous_</h3> | $${\color{yellow}will\ be}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 👀⏳➡️ Previsões </br> Ação em progresso no futuro |
 | <h3>_Future Perfect_</h3> | $${\color{yellow}will\ have}$$ + $${\color{green}past\ participle}$$ | ⏳✅➡️ Aposta </br> Ação concluída antes de certo momento no futuro |
 | <h3>_Future Perfect Continuous_</h3> | $${\color{yellow}will\ have\ been}$$ + $${\color{gray}verb}$$ + $${\color{green}ing}$$ | 🔄➡️💪 Presságio </br> Duração até um ponto no futuro |
+
+
+## Dicas
+
+
