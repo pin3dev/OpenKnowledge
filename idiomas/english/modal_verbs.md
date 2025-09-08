@@ -76,15 +76,15 @@ mindmap
 
 > Usados para situações hipotéticas, recomendações e condições não garantidas.
 
-* Would / Would not: $$^{hipótese}$$
+* Would / Would not: $$^{hipotese}$$
 
   > Ex.: `I would travel if I had money.`</br>
   > Ex.: `She wouldn’t accept that offer.`</br>
-* Could / Could not: $$^{hipótese}$$
+* Could / Could not: $$^{hipotese}$$
 
   > Ex.: `We could try another approach.`</br>
   > Ex.: `I couldn’t open the file.`</br>
-* Should / Should not: $$^{recomendação}$$
+* Should / Should not: $$^{recomendacao}$$
 
   > Ex.: `You should see a doctor.`</br>
   > Ex.: `He shouldn’t be late.`</br>
@@ -99,7 +99,7 @@ mindmap
 
   > Ex.: `We shall meet again.`</br>
   > Ex.: `The company shall provide insurance.`</br>
-* Ought to: $$^{recomendação}$$
+* Ought to: $$^{recomendacao}$$
 
   > Ex.: `You ought to respect the rules.`</br>
   > Ex.: `She ought to apologize.`</br>
