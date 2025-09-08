@@ -109,3 +109,28 @@
 
 > [!TIP]
 > Descrição das ações com foco no fim acontecimento, contando com a duração delas.
+
+
+
+
+# Future with *Going to*
+
+> Ideia central: planos já decididos ou previsões baseadas em evidências atuais.
+
+## Tabela
+
+| Tempo                           | Afirmativa                                                                                      | Negativa                                                                                             | Interrogativa                                                                                                        |
+| ------------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <h3>*Future with Going to*</h3> | \${\color{gray}suj}\$ + \${\color{yellow}am/is/are\ going\ to}\$ + \${\color{green}1ª\ forma}\$ | \${\color{gray}suj}\$ + \${\color{yellow}am/is/are\ not\ going\ to}\$ + \${\color{green}1ª\ forma}\$ | \${\color{yellow}am/is/are}\$ + \${\color{gray}suj}\$ + \${\color{yellow}going\ to}\$ + \${\color{green}1ª\ forma}\$ |
+
+## Examples
+
+* *Future with Going to*: <sup>Planos, intenções ou previsões com evidência</sup>
+
+  > ✅ `I am going to start` a new project <ins>next week</ins>. </br>
+  > ❌ `She isn’t going to start` it <ins>next week</ins>. </br>
+  > ❓ `Are you going to start` it <ins>next week</ins>? </br>
+
+> \[!TIP]
+> Use *going to* para intenções planejadas ou previsões lógicas (quando algo já mostra sinais de acontecer).
+
