@@ -41,12 +41,12 @@ mindmap
 
 * Could
 
-  > Ex.: `I could have joined the call, but I was busy.`
+  > Ex.: `I could have joined the call, but I was busy.`</br>
 
 * Might / May
 
-  > Ex.: `She might have missed the deadline.`
-  > Ex.: `The system may have crashed overnight.`
+  > Ex.: `She might have missed the deadline.`</br>
+  > Ex.: `The system may have crashed overnight.`</br>
 
 
 ## 2. Obrigação / Crítica Passada
@@ -55,11 +55,11 @@ mindmap
 
 * Should
 
-  > Ex.: `You should have updated the document.`
+  > Ex.: `You should have updated the document.`</br>
 
 * Ought to
 
-  > Ex.: `He ought to have informed the team.`
+  > Ex.: `He ought to have informed the team.`</br>
 
 
 ## 3. Dedução Passada
@@ -68,12 +68,12 @@ mindmap
 
 * Must
 
-  > Ex.: `They must have fixed the bug already.`
+  > Ex.: `They must have fixed the bug already.`</br>
 
 * Can’t / Couldn’t
 
-  > Ex.: `She can’t have written this code alone.`
-  > Ex.: `He couldn’t have accessed the server without a password.`
+  > Ex.: `She can’t have written this code alone.`</br>
+  > Ex.: `He couldn’t have accessed the server without a password.`</br>
 
 
 ## 4. Hipótese Condicional Passada
@@ -82,5 +82,5 @@ mindmap
 
 * Would
 
-  > Ex.: `I would have deployed the update if the tests had passed.`
+  > Ex.: `I would have deployed the update if the tests had passed.`</br>
 
