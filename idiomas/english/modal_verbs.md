@@ -36,7 +36,6 @@ mindmap
       Ought to
 ```
 
----
 
 ## 1. Certeza / Força
 
@@ -55,7 +54,6 @@ mindmap
   > Ex.: `You must wear a seatbelt.`</br>
   > Ex.: `You must not enter this room.`</br>
 
----
 
 ## 2. Possibilidade
 
@@ -70,7 +68,6 @@ mindmap
   > Ex.: `He might call tonight.`</br>
   > Ex.: `We might find a solution.`</br>
 
----
 
 ## 3. Hipótese / Condicional
 
@@ -89,7 +86,6 @@ mindmap
   > Ex.: `You should see a doctor.`</br>
   > Ex.: `He shouldn’t be late.`</br>
 
----
 
 ## 4. Formalidade
 
