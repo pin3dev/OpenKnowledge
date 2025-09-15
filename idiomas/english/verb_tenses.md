@@ -10,6 +10,14 @@
 | <h3>*Past Simple*</h3> | \${\color{gray}suj}\$ + \${\color{blue}2ª\ forma}\$ | \${\color{gray}suj}\$ + \${\color{yellow}did}\$ + \${\color{red}not}\$ + \${\color{green}1ª\ forma}\$ | \${\color{yellow}did}\$ + \${\color{gray}suj}\$ + \${\color{green}1ª\ forma}\$ |
 | <h3>*Future Simple*</h3> | \${\color{gray}suj}\$ + \${\color{yellow}will}\$ + \${\color{green}1ª\ forma}\$ | \${\color{gray}suj}\$ + \${\color{yellow}will}\$ + \${\color{red}not}\$ + \${\color{green}1ª\ forma}\$ | \${\color{yellow}will}\$ + \${\color{gray}suj}\$ + \${\color{green}1ª\ forma}\$ | 
 
+> [!WARNING]  
+> > Caso especial para o verbo `to be`. É o único verbo do inglês que dispensa o uso do verbo auxiliar `to do` nas construções negativas e interrogativas do passado e presente simples.
+> > | Tempo | Negativa | Interrogativa | Exemplo |
+> > |-|-|-|-|  
+> > |<h3>*Present Simple*</h3>| ${\color{gray}suj}$ + ${\color{blue}am/is/are}$ + ${\color{red}not}$ | ${\color{blue}am/is/are}$ + ${\color{gray}suj}$ | * `I am not` tired.</br> * `Are you` ready? |  
+> > |<h3>*Past Simple*</h3> | \${\color{gray}suj}\$ + \${\color{blue}were/was}\$ + \${\color{red}not}\$ |  \${\color{blue}were/was}\$ + \${\color{gray}suj}\$ | * `I wasn't` at the office!</br> * Where `were you` last night? |  
+<!-- > > |<h3>*Future Simple*</h3>| ${\color{gray}suj}$ + ${\color{blue}will be}$ + ${\color{red}not}$ | ${\color{blue}will}$ + ${\color{gray}suj}$ + ${\color{blue}be}$ | * `I will not` (won’t) be late.</br> * Will she be at home tomorrow? |  -->
+
 ##  Examples
 - *Present Simple*: <sup>Hábitos, verdades, rotinas</sup>
     > ✅ `I work` <ins>every day</ins>. </br>
