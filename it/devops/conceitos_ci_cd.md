@@ -1,3 +1,6 @@
+> [IMPORTANT]
+> É importante destacar que o código deve estar preparado para suportar o processo de CI/CD. Nesse contexto, os princípios do `12-Factor App` são fundamentais, pois garantem que a aplicação seja portável, configurável e escalável em diferentes ambientes. Práticas como uso de _variáveis de ambiente_ para configuração, _dependências explícitas_, _separação entre build, release e run_ e _logs_ estruturados são essenciais para que o pipeline funcione de forma previsível e que o código permaneça estável em produção. Assim, os 12 fatores servem como a base conceitual que sustenta a confiabilidade de todo o processo de integração e entrega contínua. (Veja mais sobre em: ./conceitos_devops.md)
+
 # 🎨 Continuous Integration (CI)
 
 ### Conceito
@@ -33,9 +36,9 @@ Na **teoria**, a CI busca minimizar problemas de integração e garantir que o s
 
 5. **Entrega de um artefato confiável**
 
-   * Ao final de cada integração, o sistema deve estar em um estado que **poderia ser entregue** (mesmo que ainda não seja colocado em produção).
+   * Ao final de cada integração, o sistema deve estar em um estado que _poderia ser entregue_ (mesmo que ainda não seja colocado em produção).
 
-👉 Em resumo, **na teoria, CI é a prática de manter o software constantemente integrado, testado e validado automaticamente**, permitindo que a equipe evolua o sistema de forma colaborativa e com menos riscos.
+👉 Em resumo, _na teoria, CI é a prática de manter o software constantemente integrado, testado e validado automaticamente_, permitindo que a equipe evolua o sistema de forma colaborativa e com menos riscos.
 
 
 # 📦 Continuous Delivery (CD)
@@ -81,3 +84,7 @@ Na **teoria**, o CD busca automatizar por completo a entrega em produção como 
 > * **Continuous Delivery** → sempre pronto para ir à produção, mas exige **gatilho manual** para o deploy final.
 > * **Continuous Deployment** → vai direto para produção de forma **automática**, sem intervenção humana.
 
+## Recursos Teóricos
+* Alura Cursos:
+   - ⭐⭐⭐⭐⭐ **Integração Contínua: pipelines e testes automatizados com Github Actions (Vinícius Dias)**
+   - 
