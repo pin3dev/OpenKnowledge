@@ -72,7 +72,7 @@
 
 ---
 
-## 🔎 Resumindo o fluxo
+#### 🔎 Resumindo o fluxo
 
 1. Dev cria branch → faz commit.
 2. Abre PR/MR → CI roda automaticamente:

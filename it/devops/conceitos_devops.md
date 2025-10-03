@@ -104,3 +104,5 @@ O **12-Factor App** garante que sua aplicação seja:
 * **Resiliente** (menos acoplada a infra).
 * **Amigável ao CI/CD** (build único, config externa, logs corretos).
 
+## Recursos Teóricos
+* ⭐⭐⭐⭐⭐ https://12factor.net/pt_br/build-release-run
