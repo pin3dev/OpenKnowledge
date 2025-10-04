@@ -55,10 +55,53 @@ COPY . .
 RUN make
 
 # Stage 2: Runtime
-FROM debian:stable-slim
+FROM debian:stable-slim AS prod
 WORKDIR /app
 COPY --from=build /src/bin/minhaapp /app/
 CMD ["./minhaapp"]
+
+
+# no docker-compose
+service:
+  app:
+    build:
+      target: prod 
 ```
 
 ➡️ Resultado: A imagem final contém apenas o executável e bibliotecas mínimas necessárias, reduzindo **tamanho** e **superfícies de ataque**.
+
+### 4. Imagens Base Leves (Runtime Minimalista)
+
+Em ambientes de produção, a imagem final não precisa conter compiladores ou ferramentas de build, apenas o executável e suas dependências.
+
+Prefira imagens base mínimas, como:
+
+* `alpine` → ~5 MB (ótima para apps Go, Rust, C++)
+* `distroless` → ainda mais enxuta e sem shell, ideal para segurança
+* `scratch` → literalmente vazia; usada quando o binário é completamente estático (ex.: Go com CGO_ENABLED=0)
+
+👉 Exemplo:
+
+# Exemplo com imagem distroless
+FROM golang:1.22 AS build
+WORKDIR /src
+COPY . .
+RUN CGO_ENABLED=0 go build -o app
+
+# Runtime minimalista
+FROM gcr.io/distroless/static
+COPY --from=build /src/app /app
+ENTRYPOINT ["/app"]
+
+
+➡️ Benefícios:
+
+* Reduz drasticamente o tamanho da imagem (de centenas de MB para poucos MB).
+* Minimiza a superfície de ataque (sem shell, pacotes ou interpretes desnecessários).
+* Melhora tempo de deploy e uso de rede/armazenamento em clusters Kubernetes.
+
+## Recursos Teóricos
+
+* Alura Cursos:
+
+  * ⭐⭐⭐⭐⭐ **Docker: Construindo imagem para produção (Vinícius Dias)**

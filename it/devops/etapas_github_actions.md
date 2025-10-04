@@ -305,7 +305,128 @@ jobs:
 * Cada artefato deve ser versionado (ex.: `v1.0.0`, `build-20251003`, `sha-1234567`).
 * Isso facilita rollback rápido e auditoria: você sabe exatamente qual versão está em produção.
 
+---
 
+Conforme explicado nas etapas do CD, veremos a seguir como colocá-las em prática utilizando o **GitHub Actions**.
+
+
+## 🧱 Deploy Automatizado (Docker Hub)
+
+Quando o artefato é uma imagem Docker, o GitHub Actions pode automatizar o push para o Docker Hub.
+Esse é o ponto mais direto de CD dentro da pipeline do Actions.
+
+**Exemplo completo de job de deploy:**
+```yml
+jobs:
+  deploy-docker:
+    runs-on: ubuntu-latest
+    needs: docker-build   # job de build no CI
+    environment: production
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build e push da imagem para Docker Hub
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/meuapp:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/meuapp:${{ github.sha }}
+```
+
+**Observações**
+
+* `docker/login-action@v3` → autentica no Docker Hub usando secrets.
+* `docker/build-push-action@v5` → constrói e envia a imagem para o registry.
+* `tags:` → define versões rastreáveis (latest e commit hash).
+* Esse job pode ser disparado automaticamente após o merge na main, ou manualmente via workflow_dispatch.
+
+## 🧩 Separação de Ambientes (Staging → Production)
+
+Embora o GitHub Actions não hospede o app em si, ele pode gerenciar diferentes fluxos de deploy, cada um com seus secrets e variáveis.
+
+**Exemplo de deploy para dois ambientes**
+```yml
+jobs:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Push imagem para Docker Hub (staging)
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: meuuser/meuapp:staging
+
+  deploy-prod:
+    runs-on: ubuntu-latest
+    environment: production
+    needs: deploy-staging
+    steps:
+      - name: Push imagem para Docker Hub (prod)
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: meuuser/meuapp:latest, ${{ github.sha }}
+```
+
+**Observações**
+
+* Cada environment no GitHub pode ter secrets próprios, como tokens de produção ou staging.
+* A ordem dos jobs (needs:) garante que staging seja feito antes da produção.
+* Você pode restringir o ambiente de production para exigir aprovação manual antes do deploy.
+
+
+## 🔐 Configuração Segura
+As configurações e credenciais (usuário, senha, tokens, endpoints etc.) devem ficar armazenadas nos secrets do repositório ou do ambiente, nunca no YAML.
+
+```yml
+env:
+  DATABASE_URL: ${{ secrets.PROD_DATABASE_URL }}
+  API_KEY: ${{ secrets.PROD_API_KEY }}
+```
+
+## 🧭 Aprovação Manual (gates de segurança)
+O GitHub Actions permite gates manuais via Environment Protection Rules, úteis para o deploy em produção.
+
+**Como configurar**
+
+* Vá em: `Settings → Environments → production → Required reviewers`.
+* Adicione os usuários que precisam aprovar o deploy.
+* O job de deploy fica pendente até aprovação manual.
+
+## 🔁 Rollback Rápido (via tags Docker)
+
+Se uma versão falhar, é possível restaurar uma imagem anterior apenas reaplicando uma tag.
+
+**Exemplo Manual**
+```yml
+docker pull meuuser/meuapp:sha-antigo
+docker tag meuuser/meuapp:sha-antigo meuuser/meuapp:latest
+docker push meuuser/meuapp:latest
+```
+
+**GitHub Actions**
+```yml
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retag imagem anterior como latest
+        run: |
+          docker pull meuuser/meuapp:${{ inputs.rollback_tag }}
+          docker tag meuuser/meuapp:${{ inputs.rollback_tag }} meuuser/meuapp:latest
+          docker push meuuser/meuapp:latest
+```
 
 ##### Recursos Teóricos
 * Alura Cursos:
