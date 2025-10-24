@@ -37,4 +37,8 @@ https://www.youtube.com/watch?v=QQDGb4AkY4c&list=PLx4x_zx8csUhzAyii9-cY-IJwo00p_
 
 # Execução
 * Para ver o programa em execução basta clicar na `seta verde` e aguardar a compilação/construção do programa e a execução do mesmo
-* 
+
+## Slots vs Signals
+- sinais são eventos que programamos, exemplo: eventos de clique, mouse pressionado...
+- slots são ações/respostas que acontecem quando os eventos são acionados...
+- 
